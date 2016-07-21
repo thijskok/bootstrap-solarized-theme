@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap-solarized-theme",
+  "description": "Bootstrap theme using the Solarized color palette",
+  "main": "./dist/solarized-dark.min.css",
+  "authors": [
+    "Thijs Kok"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "bootstrap",
+    "theme",
+    "solarized"
+  ],
+  "moduleType": [],
+  "homepage": "https://github.com/thijskok/bootstrap-solarized-theme",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ]
+}
