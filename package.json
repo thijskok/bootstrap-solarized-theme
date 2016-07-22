@@ -1,14 +1,14 @@
 {
   "name": "bootstrap-solarized-theme",
   "description": "Bootstrap theme using the Solarized color palette",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Thijs Kok",
     "email": "mail@thijskok.nl",
     "url": "https://github.com/thijskok"
   },
   "devDependencies": {
-    "bootstrap-sass": "*",
+    "bootstrap-sass": "3.*",
     "gulp": "*",
     "gulp-autoprefixer": "*",
     "gulp-concat": "*",
