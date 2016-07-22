@@ -7,6 +7,9 @@
     "email": "mail@thijskok.nl",
     "url": "https://github.com/thijskok"
   },
+  "dependencies": {
+    "bootstrap-sass": "3.*"
+  },  
   "devDependencies": {
     "bootstrap-sass": "3.*",
     "gulp": "*",
