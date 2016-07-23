@@ -56,7 +56,9 @@ After cloning the repo, run `npm install` to ensure you have all dev dependencie
 
 ### Gulp
 
-- `gulp` - run a watch task that will monitor the SASS files and regenerate the CSS files.
+- `gulp` - build the CSS files and minify them.
+- `gulp watch` - run a watch task that will monitor the SASS files and regenerate the CSS files.
+- `gulp lint` - run a SASS lint task.
 
 ### SASS
 

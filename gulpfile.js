@@ -27,7 +27,7 @@ gulp.task('sass', function() {
 });
 
 // Minify CSS
-gulp.task('minify', function() {
+gulp.task('minify', ['sass'], function() {
     return gulp
       .src(['./dist/css/*.css','!./dist/css/*.min.css'])
       .pipe(rename({ suffix: '.min' }))
@@ -38,14 +38,18 @@ gulp.task('minify', function() {
 
 // Lint SASS
 gulp.task('lint', function () {
-  return gulp.src('sass/**/*.s+(a|c)ss')
-    .pipe(sasslint())
-    .pipe(sasslint.format())
-    .pipe(sasslint.failOnError())
+    return gulp
+      .src('sass/**/*.s+(a|c)ss')
+      .pipe(sasslint())
+      .pipe(sasslint.format())
+      .pipe(sasslint.failOnError())
 });
 
-// Watch Task that compiles SASS and minifies output CSS
-gulp.task('default', ['sass', 'minify'], function() {
+// Watch task monitors SASS files
+gulp.task('watch', function() {
     gulp.watch('sass/*.scss', ['sass']);
     gulp.watch('dist/css/*.css', ['minify']);
 });
+
+// Default task
+gulp.task('default', ['sass', 'minify']);
