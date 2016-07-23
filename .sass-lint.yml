@@ -1,0 +1,3 @@
+rules:
+    function-name-format:
+        convention: snake_case
