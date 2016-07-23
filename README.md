@@ -1,4 +1,7 @@
 # Bootstrap Solarized template
+
+[![Build Status](https://travis-ci.org/thijskok/bootstrap-solarized-theme.svg?branch=master)](https://travis-ci.org/thijskok/bootstrap-solarized-theme)
+
 Bootstrap Solarized is a Bootstrap 3 compatible theme that uses Ethan Schoonover's awesome [Solarized color palette](http://ethanschoonover.com/solarized). It comes in two varieties, a light and a dark theme.
 
 ![preview_light](https://raw.githubusercontent.com/thijskok/bootstrap-solarized-theme/master/preview-light.png)
