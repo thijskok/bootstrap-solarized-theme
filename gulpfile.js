@@ -1,12 +1,12 @@
 // Assigning modules to local variables
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var sasslint = require('gulp-sass-lint');
-var cssmin = require('gulp-cssmin');
-var autoprefixer = require('gulp-autoprefixer');
-var header = require('gulp-header');
-var rename = require("gulp-rename");
-var pkg = require('./package.json');
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    sasslint = require('gulp-sass-lint'),
+    cssmin = require('gulp-cssmin'),
+    autoprefixer = require('gulp-autoprefixer'),
+    header = require('gulp-header'),
+    rename = require("gulp-rename"),
+    pkg = require('./package.json');
 
 // Set the banner content
 var banner = ['/*!\n',
