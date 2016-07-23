@@ -1,6 +1,7 @@
 // Assigning modules to local variables
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var sasslint = require('gulp-sass-lint');
 var cssmin = require('gulp-cssmin');
 var autoprefixer = require('gulp-autoprefixer');
 var header = require('gulp-header');
@@ -33,6 +34,14 @@ gulp.task('minify', function() {
       .pipe(autoprefixer())
       .pipe(cssmin())
       .pipe(gulp.dest('dist/css'))
+});
+
+// Lint SASS
+gulp.task('lint', function () {
+  return gulp.src('sass/**/*.s+(a|c)ss')
+    .pipe(sasslint())
+    .pipe(sasslint.format())
+    .pipe(sasslint.failOnError())
 });
 
 // Watch Task that compiles SASS and minifies output CSS
