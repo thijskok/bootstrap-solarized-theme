@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+  - "6.1"
+  - "6"
+  - "5.11"
+
+before_install:
+  - npm install -g gulp
+  - npm install --dev
+
+script:
+  - gulp lint
