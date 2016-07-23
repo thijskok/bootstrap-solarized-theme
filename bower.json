@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-solarized-theme",
   "description": "Bootstrap theme using the Solarized color palette",
-  "main": "./dist/solarized-dark.min.css",
+  "main": "./dist/css/solarized-dark-theme.css",
   "authors": [
     "Thijs Kok"
   ],
