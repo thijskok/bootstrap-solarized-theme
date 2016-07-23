@@ -1,4 +1,4 @@
-# Bootstrap Solarized template
+# Bootstrap Solarized theme
 
 [![Build Status](https://travis-ci.org/thijskok/bootstrap-solarized-theme.svg?branch=master)](https://travis-ci.org/thijskok/bootstrap-solarized-theme)
 [![npm version](https://badge.fury.io/js/bootstrap-solarized-theme.svg)](https://badge.fury.io/js/bootstrap-solarized-theme)
@@ -30,7 +30,7 @@ Using this theme on your existing Bootstrap application is easy:
 	  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 	  <!-- Bootstrap Solarized dark theme -->
-	  <link rel="stylesheet" type="text/css" href="dist/css/solarized-dark-template.min.css">
+	  <link rel="stylesheet" type="text/css" href="dist/css/solarized-dark-theme.min.css">
 	```
 
 	*Note*: depending on your installation and deployment methods, the CSS files might reside in another directory. Change `dist/css/` into the path where the CSS files got installed or copied to. For example, NPM installs the theme into `node_modules/bootstrap-solarized-theme/dist` as a default.
@@ -66,7 +66,7 @@ After cloning the repo, run `npm install` to ensure you have all dev dependencie
 
 ### SASS
 
-This template uses the [SASS syntax](http://sass-lang.com/) to define the template's structure and variables.
+This theme uses the [SASS syntax](http://sass-lang.com/) to redefine the Bootstrap variables.
 
 - `solarized-dark-theme.scss`: dark theme
 - `solarized-light-theme.scss`: light theme
@@ -76,13 +76,13 @@ modify the theme file to look like this:
 
 ```scss
 // Custom variables
-$font-family-sans-serif:  "Menlo", Arial, sans-serif !default;
+$font-family-sans-serif:  'Menlo', Arial, sans-serif !default;
 
 // Solarized Dark variables
-@import "variables-dark";
+@import 'variables-dark';
 
 // Bootstrap SASS theme
-@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 ```
 
 ## Solarized
